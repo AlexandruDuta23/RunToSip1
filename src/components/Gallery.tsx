@@ -3,31 +3,31 @@ import { Instagram, Heart, MessageCircle } from 'lucide-react';
 
 const Gallery = () => {
   const photos = [
-    {
-      url: 'https://images.pexels.com/photos/2526878/pexels-photo-2526878.jpeg?auto=compress&cs=tinysrgb&w=400',
-      caption: 'Sunday morning run through Herastrau Park'
-    },
-    {
-      url: 'https://images.pexels.com/photos/1571939/pexels-photo-1571939.jpeg?auto=compress&cs=tinysrgb&w=400',
-      caption: 'Post-run coffee celebration'
-    },
-    {
-      url: 'https://images.pexels.com/photos/1671327/pexels-photo-1671327.jpeg?auto=compress&cs=tinysrgb&w=400',
-      caption: 'Our amazing running community'
-    },
-    {
-      url: 'https://images.pexels.com/photos/1556691/pexels-photo-1556691.jpeg?auto=compress&cs=tinysrgb&w=400',
-      caption: 'Exploring Old Town Bucharest'
-    },
-    {
-      url: 'https://images.pexels.com/photos/2402846/pexels-photo-2402846.jpeg?auto=compress&cs=tinysrgb&w=400',
-      caption: 'Coffee time after a great run'
-    },
-    {
-      url: 'https://images.pexels.com/photos/1571940/pexels-photo-1571940.jpeg?auto=compress&cs=tinysrgb&w=400',
-      caption: 'Team spirit and friendship'
-    }
-  ];
+  {
+    url: '/public/Poza1.jpg',
+    caption: 'Sunday morning run through Bucharest Golf Club'
+  },
+  {
+    url: '/public/Poza2.jpg',
+    caption: 'Girls power!'
+  },
+  {
+    url: '/public/Poza3.jpg',
+    caption: 'Our amazing running community'
+  },
+  {
+    url: '/public/Poza4.jpg',
+    caption: 'ThrowBack Coffee'
+  },  
+  {
+    url: '/public/Poza5.jpg',
+    caption: 'YoPRO time after a great run'
+  },
+  {
+    url: '/public/Poza6.jpg',
+    caption: 'Team spirit and friendship'
+  }
+];
 
   return (
     <section id="gallery" className="py-20 bg-gradient-to-br from-gray-50 to-amber-50">

@@ -96,7 +96,7 @@ const Footer = () => {
               className="h-8 w-auto"
             />
             <p className="text-gray-400">
-              © 2024 Run to Sip. Made with ❤️ and ☕ in Bucharest.
+              © 2025 Run to Sip. Made with ❤️ and ☕ in Bucharest.
             </p>
           </div>
           <p className="text-gray-500 text-sm">

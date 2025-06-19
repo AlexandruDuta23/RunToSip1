@@ -69,13 +69,13 @@ const About = () => {
               </p>
               <div className="flex flex-wrap gap-4">
                 <div className="bg-amber-100 px-4 py-2 rounded-full">
-                  <span className="text-amber-800 font-semibold">50+ Members</span>
+                  <span className="text-amber-800 font-semibold">150+ Members</span>
                 </div>
                 <div className="bg-orange-100 px-4 py-2 rounded-full">
-                  <span className="text-orange-800 font-semibold">100+ Runs</span>
+                  <span className="text-orange-800 font-semibold">20+ Runs</span>
                 </div>
                 <div className="bg-red-100 px-4 py-2 rounded-full">
-                  <span className="text-red-800 font-semibold">2+ Years</span>
+                  <span className="text-red-800 font-semibold">8+ Months</span>
                 </div>
               </div>
             </div>

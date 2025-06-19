@@ -4,31 +4,31 @@ import { Calendar, Clock, MapPin, Users, Coffee } from 'lucide-react';
 const Schedule = () => {
   const upcomingRuns = [
     {
-      date: 'Dec 15, 2024',
+      date: 'June 01, 2025',
       time: '9:00 AM',
-      location: 'Herastrau Park',
-      distance: '5K - 8K',
+      location: 'Tucano Coffee',
+      distance: '3K - 5K - 7K',
       difficulty: 'All Levels',
-      coffeeStop: 'Origo Coffee Shop',
-      description: 'Beautiful lakeside run through Bucharest\'s largest park'
+      coffeeStop: 'Tucano Coffee Shop',
+      description: 'Beautiful run through Bucharest'
     },
     {
-      date: 'Dec 22, 2024',
+      date: 'June 08, 2025',
       time: '9:00 AM',
-      location: 'Old Town Circuit',
-      distance: '4K - 6K',
-      difficulty: 'Beginner Friendly',
-      coffeeStop: 'Cafea Specialty',
+      location: 'Parcul Eroilor',
+      distance: '3K - 5K - 7K',
+      difficulty: 'All Levels',
+      coffeeStop: 'ThrowBack Coffee',
       description: 'Historic route through cobblestone streets and landmarks'
     },
     {
-      date: 'Dec 29, 2024',
-      time: '9:00 AM',
-      location: 'Cismigiu Gardens',
-      distance: '3K - 7K',
+      date: 'June 15, 2025',
+      time: '7:40 AM',
+      location: 'Bucharest Golf Club',
+      distance: '3K - 5K - 7K',
       difficulty: 'All Levels',
-      coffeeStop: 'The Ark Coffee',
-      description: 'New Year preparation run in the heart of the city'
+      coffeeStop: 'Specialty coffee',
+      description: 'We combine running golf with excellent coffee'
     }
   ];
 

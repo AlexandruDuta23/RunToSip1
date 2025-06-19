@@ -22,7 +22,7 @@ const WhatsAppJoin = () => {
 
   const handleJoinWhatsApp = () => {
     // Replace with your actual WhatsApp group invite link
-    const whatsappGroupLink = 'https://chat.whatsapp.com/your-group-invite-link';
+    const whatsappGroupLink = 'https://chat.whatsapp.com/CZSlkMfLr97ITQNerWVXbq';
     window.open(whatsappGroupLink, '_blank');
   };
 
