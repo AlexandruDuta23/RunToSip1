@@ -75,7 +75,7 @@ const About = () => {
                   <span className="text-orange-800 font-semibold">20+ Runs</span>
                 </div>
                 <div className="bg-red-100 px-4 py-2 rounded-full">
-                  <span className="text-red-800 font-semibold">8+ Months</span>
+                  <span className="text-red-800 font-semibold">9+ Months</span>
                 </div>
               </div>
             </div>
