@@ -39,9 +39,6 @@ const Schedule = () => {
   const handleJoinRun = (runLocation: string, runDate: string) => {
     setRegisteredRun(`${runLocation} on ${runDate}`);
     setShowRegistration(true);
-    setTimeout(() => {
-      setShowRegistration(false);
-    }, 3000);
   };
 
   return (
@@ -196,7 +193,15 @@ const Schedule = () => {
       {/* Registration Success Popup */}
       {showRegistration && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
-          <div className="bg-white rounded-2xl p-8 max-w-md w-full text-center transform animate-pulse">
+          <div className="bg-white rounded-2xl p-8 max-w-md w-full text-center shadow-2xl">
+            <div className="flex justify-end mb-2">
+              <button
+                onClick={() => setShowRegistration(false)}
+                className="p-1 hover:bg-gray-100 rounded-full transition-colors duration-200"
+              >
+                <X className="h-5 w-5 text-gray-600" />
+              </button>
+            </div>
             <div className="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
               <CheckCircle className="h-8 w-8 text-green-600" />
             </div>
@@ -204,9 +209,15 @@ const Schedule = () => {
             <p className="text-gray-600 mb-4">
               Great! You've successfully registered for the run at <strong>{registeredRun}</strong>.
             </p>
-            <p className="text-sm text-gray-500">
+            <p className="text-sm text-gray-500 mb-6">
               Join our WhatsApp group for detailed meeting point information and updates!
             </p>
+            <button
+              onClick={() => setShowRegistration(false)}
+              className="bg-gradient-to-r from-green-500 to-emerald-600 text-white px-6 py-2 rounded-full font-semibold hover:from-green-600 hover:to-emerald-700 transition-all duration-300"
+            >
+              Got it!
+            </button>
           </div>
         </div>
       )}
