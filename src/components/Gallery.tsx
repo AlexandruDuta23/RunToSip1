@@ -7,8 +7,8 @@ const Gallery = () => {
 
   const photos = [
     {
-      url: 'https://images.pexels.com/photos/2526878/pexels-photo-2526878.jpeg?auto=compress&cs=tinysrgb&w=400',
-      caption: 'Sunday morning run through Herastrau Park'
+      url: '/content/alexandra.jpg',
+      caption: 'Sunday morning run with Alexandra'
     },
     {
       url: 'https://images.pexels.com/photos/1571939/pexels-photo-1571939.jpeg?auto=compress&cs=tinysrgb&w=400',

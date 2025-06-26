@@ -1,11 +1,18 @@
 import React from 'react';
 import { MessageCircle, Users, Bell, Calendar, ArrowRight } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
+import type { LucideIcon } from 'lucide-react';
+
+interface Benefit {
+  icon: LucideIcon;
+  title: string;
+  description: string;
+}
 
 const WhatsAppJoin = () => {
   const { t } = useLanguage();
 
-  const benefits = [
+  const benefits: Benefit[] = [
     {
       icon: Bell,
       title: t('instantUpdates'),

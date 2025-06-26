@@ -1,6 +1,7 @@
 import React from 'react';
 import { Calendar, User, ArrowRight } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
+import { Link } from 'react-router-dom';
 
 const Articles = () => {
   const { t } = useLanguage();
@@ -20,15 +21,17 @@ const Articles = () => {
     },
     {
       id: 2,
-      title: 'Running in Winter: Essential Tips',
-      titleRo: 'Alergarea iarna: Sfaturi esențiale',
-      excerpt: 'Stay motivated and safe during cold weather runs with our comprehensive winter running guide.',
-      excerptRo: 'Rămâi motivat și în siguranță în timpul alergărilor pe vreme rece cu ghidul nostru complet pentru alergarea de iarnă.',
-      author: 'Alexandru Ionescu',
-      date: '2024-12-08',
-      image: 'https://images.pexels.com/photos/2402846/pexels-photo-2402846.jpeg?auto=compress&cs=tinysrgb&w=400',
-      category: 'Training',
-      categoryRo: 'Antrenament'
+      title: 'RunToSip: Comunitatea care transformă pașii în speranță',
+      titleRo: 'RunToSip: Comunitatea care transformă pașii în speranță',
+      excerpt: 'Descoperă povestea RunToSip, comunitatea fondată de Alexandra și Nemir, unde alergarea și cafeaua creează legături autentice și momente memorabile.',
+      excerptRo: 'Descoperă povestea RunToSip, comunitatea fondată de Alexandra și Nemir, unde alergarea și cafeaua creează legături autentice și momente memorabile.',
+      author: 'Andreea Vasile',
+      date: '2025-04-28',
+      image: '/content/alexandra.jpg',
+      category: 'Comunitate',
+      categoryRo: 'Comunitate',
+      external: true,
+      url: 'https://www.redbull.com/ro-ro/run-to-sip-comunitate-de-alergare-interviu'
     },
     {
       id: 3,
@@ -95,10 +98,25 @@ const Articles = () => {
                   {article.excerpt}
                 </p>
                 
-                <button className="inline-flex items-center space-x-2 text-secondary font-semibold hover:text-primary transition-colors duration-200">
-                  <span>{t('readMore')}</span>
-                  <ArrowRight className="h-4 w-4" />
-                </button>
+                {article.external ? (
+                  <a
+                    href={article.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center space-x-2 text-secondary font-semibold hover:text-primary transition-colors duration-200"
+                  >
+                    <span>{t('readMore')}</span>
+                    <ArrowRight className="h-4 w-4" />
+                  </a>
+                ) : (
+                  <Link
+                    to={`/articles/${article.id}`}
+                    className="inline-flex items-center space-x-2 text-secondary font-semibold hover:text-primary transition-colors duration-200"
+                  >
+                    <span>{t('readMore')}</span>
+                    <ArrowRight className="h-4 w-4" />
+                  </Link>
+                )}
               </div>
             </article>
           ))}

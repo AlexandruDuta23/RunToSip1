@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
 import LanguageToggle from './LanguageToggle';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   const { t } = useLanguage();
@@ -56,6 +57,14 @@ const Header = () => {
                 {t(item)}
               </button>
             ))}
+            <Link
+              to="/crew"
+              className={`font-medium transition-colors duration-200 hover:text-primary ${
+                isScrolled ? 'text-gray-700' : 'text-white'
+              }`}
+            >
+              {t('crew') || 'Crew'}
+            </Link>
             <LanguageToggle />
           </nav>
 
@@ -85,6 +94,13 @@ const Header = () => {
                 {t(item)}
               </button>
             ))}
+            <Link
+              to="/crew"
+              className="block px-3 py-2 text-gray-700 font-medium hover:text-primary transition-colors duration-200"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              {t('crew') || 'Crew'}
+            </Link>
           </div>
         </div>
       )}

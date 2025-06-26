@@ -28,7 +28,7 @@ const translations = {
     
     // About
     moreThanRunning: 'More Than Just Running',
-    aboutDescription: 'Chasing Endorphins & Kudos is Bucharest\'s most welcoming running community. We combine the joy of running with the warmth of coffee culture, creating lasting friendships one Sunday at a time.',
+    aboutDescription: 'Run To Sip is Bucharest\'s most welcoming running community. We combine the joy of running with the warmth of coffee culture, creating lasting friendships one Sunday at a time.',
     communityFirst: 'Community First',
     communityFirstDesc: 'We believe running is better together. Join a supportive community that celebrates every step.',
     coffeeCulture: 'Coffee Culture',
@@ -125,7 +125,7 @@ const translations = {
     
     // About
     moreThanRunning: 'Mai mult decât alergare',
-    aboutDescription: 'Chasing Endorphins & Kudos este cea mai primitoare comunitate de alergare din București. Combinăm bucuria alergării cu căldura culturii cafelei, creând prietenii de durată duminică de duminică.',
+    aboutDescription: 'Run To Sip este cea mai primitoare comunitate de alergare din București. Combinăm bucuria alergării cu căldura culturii cafelei, creând prietenii de durată duminică de duminică.',
     communityFirst: 'Comunitatea pe primul loc',
     communityFirstDesc: 'Credem că alergarea este mai bună împreună. Alătură-te unei comunități care sărbătorește fiecare pas.',
     coffeeCulture: 'Cultura cafelei',
